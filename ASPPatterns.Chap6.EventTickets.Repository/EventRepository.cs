@@ -10,7 +10,7 @@ namespace ASPPatterns.Chap6.EventTickets.Repository
 {
     public class EventRepository : IEventRepository 
     {
-        private string connectionString = @"Data Source=.\;AttachDbFilename=|DataDirectory|\EventTickets.mdf;Integrated Security=True;User Instance=True";
+        private string connectionString = @"Server=127.0.0.1;Database=EventTickets;Uid=sa;Pwd=niuniu;";
 
         public Event FindBy(Guid id)
         {
